@@ -1,0 +1,2 @@
+# Grammar for testing leftmost derivation
+S -> a S b | a b

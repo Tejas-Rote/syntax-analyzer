@@ -1,0 +1,6 @@
+Program -> StmtList
+StmtList -> Stmt StmtList | ε
+Stmt -> id = Expr ; | if ( Expr ) Stmt | while ( Expr ) Stmt | { StmtList }
+Expr -> Expr + Term | Expr - Term | Term
+Term -> Term * Factor | Term / Factor | Factor
+Factor -> id | num | ( Expr )
